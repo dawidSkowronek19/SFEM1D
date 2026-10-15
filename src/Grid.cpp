@@ -1,4 +1,4 @@
-#include "./Grid.hpp"
+#include "../include/Grid.hpp"
 
 //========== Constructor ==========
 Grid::Grid(const GridParameters& parameters) : m_gridParameters(parameters){

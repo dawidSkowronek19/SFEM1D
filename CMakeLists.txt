@@ -4,14 +4,14 @@ project(FemGrid CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-# 1. Stworzenie biblioteki z Twojego kodu (aby testy mogły z niej korzystać)
-add_library(grid_lib src/mesh/Grid.cpp)
-target_include_directories(grid_lib PUBLIC src)
+# 1. Stworzenie biblioteki z kodu źródłowego
+add_library(grid_lib src/Grid.cpp)
+target_include_directories(grid_lib PUBLIC src include)
 
 find_package(GSL REQUIRED)
 target_link_libraries(grid_lib PUBLIC GSL::gsl GSL::gslcblas m)
 
-# 2. Pobranie Google Test (nowoczesne podejście FetchContent)
+# 2. Pobranie Google Test
 include(FetchContent)
 FetchContent_Declare(
   googletest
