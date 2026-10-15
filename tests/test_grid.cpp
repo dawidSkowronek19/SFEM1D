@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../src/mesh/Grid.hpp"
+#include "../include/Grid.hpp"
 
 
 class GridTest : public ::testing::Test {
