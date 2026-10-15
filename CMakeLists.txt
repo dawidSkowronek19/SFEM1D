@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # 1. Stworzenie biblioteki z Twojego kodu (aby testy mogły z niej korzystać)
-add_library(grid_lib src/mesh/Grid.cpp)
+add_library(grid_lib src/Grid.cpp)
 target_include_directories(grid_lib PUBLIC src)
 
 find_package(GSL REQUIRED)
