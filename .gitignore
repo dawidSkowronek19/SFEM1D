@@ -1,0 +1,30 @@
+# Katalogi budowania i biblioteki
+build/
+bin/
+lib/
+out/
+
+# Pliki generowane przez CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Pliki obiektowe i skompilowane pliki wykonywalne
+*.o
+*.a
+*.so
+*.dylib
+*.exe
+*.elf
+
+# Środowiska Programistyczne (IDE) i edytory
+.vscode/
+.idea/
+*.swp
+*~
+
+# Pliki tymczasowe systemu operacyjnego
+.DS_Store
+Thumbs.db
