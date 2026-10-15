@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgrid_lib.a CMakeFiles/grid_lib.dir/src/mesh/Grid.cpp.o
+/usr/bin/ranlib libgrid_lib.a

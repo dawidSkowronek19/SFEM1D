@@ -1,0 +1,469 @@
+Start testing: Oct 15 16:27 CEST
+----------------------------------------------------------
+1/10 Testing: GridDeathTest.ConstructorFailsWhenZeroElements
+1/10 Test: GridDeathTest.ConstructorFailsWhenZeroElements
+Command: "/home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests/run_tests" "--gtest_filter=GridDeathTest.ConstructorFailsWhenZeroElements" "--gtest_also_run_disabled_tests"
+Directory: /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests
+"GridDeathTest.ConstructorFailsWhenZeroElements" start time: Oct 15 16:27 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GridDeathTest.ConstructorFailsWhenZeroElements
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GridDeathTest
+[ RUN      ] GridDeathTest.ConstructorFailsWhenZeroElements
+============================================================
+
+
+ 			GRID SECTION 
+
+
+		#### GRID PARAMETERS ####
+
+	x_start = 0
+	x_end = 1
+	Growth Factor = 1
+	Attraction Force Constant = 1
+	Grid Integration Order = 5
+	Number of elements = 0
+
+[       OK ] GridDeathTest.ConstructorFailsWhenZeroElements (0 ms)
+[----------] 1 test from GridDeathTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GridDeathTest.ConstructorFailsWhenZeroElements" end time: Oct 15 16:27 CEST
+"GridDeathTest.ConstructorFailsWhenZeroElements" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/10 Testing: GridTest.ConstructorCreatesCorrectNumberOfElements
+2/10 Test: GridTest.ConstructorCreatesCorrectNumberOfElements
+Command: "/home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests/run_tests" "--gtest_filter=GridTest.ConstructorCreatesCorrectNumberOfElements" "--gtest_also_run_disabled_tests"
+Directory: /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests
+"GridTest.ConstructorCreatesCorrectNumberOfElements" start time: Oct 15 16:27 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GridTest.ConstructorCreatesCorrectNumberOfElements
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GridTest
+[ RUN      ] GridTest.ConstructorCreatesCorrectNumberOfElements
+============================================================
+
+
+ 			GRID SECTION 
+
+
+		#### GRID PARAMETERS ####
+
+	x_start = 0
+	x_end = 1
+	Growth Factor = 1
+	Attraction Force Constant = 1
+	Grid Integration Order = 5
+	Number of elements = 10
+
+	Output File Path = ./output
+
+		# GRID PARAMETERS END #
+
+[       OK ] GridTest.ConstructorCreatesCorrectNumberOfElements (0 ms)
+[----------] 1 test from GridTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GridTest.ConstructorCreatesCorrectNumberOfElements" end time: Oct 15 16:27 CEST
+"GridTest.ConstructorCreatesCorrectNumberOfElements" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/10 Testing: GridTest.ConstructrFailsWhenX_endLessThanX_start
+3/10 Test: GridTest.ConstructrFailsWhenX_endLessThanX_start
+Command: "/home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests/run_tests" "--gtest_filter=GridTest.ConstructrFailsWhenX_endLessThanX_start" "--gtest_also_run_disabled_tests"
+Directory: /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests
+"GridTest.ConstructrFailsWhenX_endLessThanX_start" start time: Oct 15 16:27 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GridTest.ConstructrFailsWhenX_endLessThanX_start
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GridTest
+[ RUN      ] GridTest.ConstructrFailsWhenX_endLessThanX_start
+============================================================
+
+
+ 			GRID SECTION 
+
+
+		#### GRID PARAMETERS ####
+
+	x_start = 1
+	x_end = 0
+[       OK ] GridTest.ConstructrFailsWhenX_endLessThanX_start (1 ms)
+[----------] 1 test from GridTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GridTest.ConstructrFailsWhenX_endLessThanX_start" end time: Oct 15 16:27 CEST
+"GridTest.ConstructrFailsWhenX_endLessThanX_start" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/10 Testing: GridTest.ConstructrFailsWhenX_endEqualToX_start
+4/10 Test: GridTest.ConstructrFailsWhenX_endEqualToX_start
+Command: "/home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests/run_tests" "--gtest_filter=GridTest.ConstructrFailsWhenX_endEqualToX_start" "--gtest_also_run_disabled_tests"
+Directory: /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests
+"GridTest.ConstructrFailsWhenX_endEqualToX_start" start time: Oct 15 16:27 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GridTest.ConstructrFailsWhenX_endEqualToX_start
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GridTest
+[ RUN      ] GridTest.ConstructrFailsWhenX_endEqualToX_start
+============================================================
+
+
+ 			GRID SECTION 
+
+
+		#### GRID PARAMETERS ####
+
+	x_start = 1
+	x_end = 1
+[       OK ] GridTest.ConstructrFailsWhenX_endEqualToX_start (1 ms)
+[----------] 1 test from GridTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GridTest.ConstructrFailsWhenX_endEqualToX_start" end time: Oct 15 16:27 CEST
+"GridTest.ConstructrFailsWhenX_endEqualToX_start" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/10 Testing: GridTest.ConstructorFailsWhenWrongIntegrationOrder
+5/10 Test: GridTest.ConstructorFailsWhenWrongIntegrationOrder
+Command: "/home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests/run_tests" "--gtest_filter=GridTest.ConstructorFailsWhenWrongIntegrationOrder" "--gtest_also_run_disabled_tests"
+Directory: /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests
+"GridTest.ConstructorFailsWhenWrongIntegrationOrder" start time: Oct 15 16:27 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GridTest.ConstructorFailsWhenWrongIntegrationOrder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GridTest
+[ RUN      ] GridTest.ConstructorFailsWhenWrongIntegrationOrder
+============================================================
+
+
+ 			GRID SECTION 
+
+
+		#### GRID PARAMETERS ####
+
+	x_start = 0
+	x_end = 1
+	Growth Factor = 1
+	Attraction Force Constant = 1
+	Grid Integration Order = 0
+[       OK ] GridTest.ConstructorFailsWhenWrongIntegrationOrder (1 ms)
+[----------] 1 test from GridTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GridTest.ConstructorFailsWhenWrongIntegrationOrder" end time: Oct 15 16:27 CEST
+"GridTest.ConstructorFailsWhenWrongIntegrationOrder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/10 Testing: GridTest.GetNodePositionReturnsCorrectValue
+6/10 Test: GridTest.GetNodePositionReturnsCorrectValue
+Command: "/home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests/run_tests" "--gtest_filter=GridTest.GetNodePositionReturnsCorrectValue" "--gtest_also_run_disabled_tests"
+Directory: /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests
+"GridTest.GetNodePositionReturnsCorrectValue" start time: Oct 15 16:27 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GridTest.GetNodePositionReturnsCorrectValue
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GridTest
+[ RUN      ] GridTest.GetNodePositionReturnsCorrectValue
+============================================================
+
+
+ 			GRID SECTION 
+
+
+		#### GRID PARAMETERS ####
+
+	x_start = 0
+	x_end = 1
+	Growth Factor = 1
+	Attraction Force Constant = 1
+	Grid Integration Order = 5
+	Number of elements = 10
+
+	Output File Path = ./output
+
+		# GRID PARAMETERS END #
+
+
+
+		#### BUILDING GRID ####
+
+		#### GRID BUILDING END ####
+
+[       OK ] GridTest.GetNodePositionReturnsCorrectValue (1 ms)
+[----------] 1 test from GridTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GridTest.GetNodePositionReturnsCorrectValue" end time: Oct 15 16:27 CEST
+"GridTest.GetNodePositionReturnsCorrectValue" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/10 Testing: GridTest.NodesAreSctrictlyMonotonic
+7/10 Test: GridTest.NodesAreSctrictlyMonotonic
+Command: "/home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests/run_tests" "--gtest_filter=GridTest.NodesAreSctrictlyMonotonic" "--gtest_also_run_disabled_tests"
+Directory: /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests
+"GridTest.NodesAreSctrictlyMonotonic" start time: Oct 15 16:27 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GridTest.NodesAreSctrictlyMonotonic
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GridTest
+[ RUN      ] GridTest.NodesAreSctrictlyMonotonic
+============================================================
+
+
+ 			GRID SECTION 
+
+
+		#### GRID PARAMETERS ####
+
+	x_start = 0
+	x_end = 1
+	Growth Factor = 1
+	Attraction Force Constant = 1
+	Grid Integration Order = 5
+	Number of elements = 10
+
+	Output File Path = ./output
+
+		# GRID PARAMETERS END #
+
+
+
+		#### BUILDING GRID ####
+
+		#### GRID BUILDING END ####
+
+[       OK ] GridTest.NodesAreSctrictlyMonotonic (0 ms)
+[----------] 1 test from GridTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GridTest.NodesAreSctrictlyMonotonic" end time: Oct 15 16:27 CEST
+"GridTest.NodesAreSctrictlyMonotonic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/10 Testing: GridTest.ZeroAtractionForceConstantLeadsToUniformGrid
+8/10 Test: GridTest.ZeroAtractionForceConstantLeadsToUniformGrid
+Command: "/home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests/run_tests" "--gtest_filter=GridTest.ZeroAtractionForceConstantLeadsToUniformGrid" "--gtest_also_run_disabled_tests"
+Directory: /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests
+"GridTest.ZeroAtractionForceConstantLeadsToUniformGrid" start time: Oct 15 16:27 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GridTest.ZeroAtractionForceConstantLeadsToUniformGrid
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GridTest
+[ RUN      ] GridTest.ZeroAtractionForceConstantLeadsToUniformGrid
+============================================================
+
+
+ 			GRID SECTION 
+
+
+		#### GRID PARAMETERS ####
+
+	x_start = 0
+	x_end = 1
+	Growth Factor = 1
+	Attraction Force Constant = 0
+	Grid Integration Order = 5
+	Number of elements = 10
+
+	Output File Path = ./output
+
+		# GRID PARAMETERS END #
+
+
+
+		#### BUILDING GRID ####
+
+		#### GRID BUILDING END ####
+
+[       OK ] GridTest.ZeroAtractionForceConstantLeadsToUniformGrid (0 ms)
+[----------] 1 test from GridTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GridTest.ZeroAtractionForceConstantLeadsToUniformGrid" end time: Oct 15 16:27 CEST
+"GridTest.ZeroAtractionForceConstantLeadsToUniformGrid" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/10 Testing: GridTest.near_NonZeroAttractionForceRefinesGridNearBoundary
+9/10 Test: GridTest.near_NonZeroAttractionForceRefinesGridNearBoundary
+Command: "/home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests/run_tests" "--gtest_filter=GridTest.near_NonZeroAttractionForceRefinesGridNearBoundary" "--gtest_also_run_disabled_tests"
+Directory: /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests
+"GridTest.near_NonZeroAttractionForceRefinesGridNearBoundary" start time: Oct 15 16:27 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GridTest.near_NonZeroAttractionForceRefinesGridNearBoundary
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GridTest
+[ RUN      ] GridTest.near_NonZeroAttractionForceRefinesGridNearBoundary
+============================================================
+
+
+ 			GRID SECTION 
+
+
+		#### GRID PARAMETERS ####
+
+	x_start = 0
+	x_end = 1
+	Growth Factor = 1
+	Attraction Force Constant = 1
+	Grid Integration Order = 5
+	Number of elements = 10
+
+	Output File Path = ./output
+
+		# GRID PARAMETERS END #
+
+#### BOUNDARY CONDITIONS ####
+
+	 Dirichlet Condition 
+
+		#### BUILDING GRID ####
+
+		#### GRID BUILDING END ####
+
+[       OK ] GridTest.near_NonZeroAttractionForceRefinesGridNearBoundary (0 ms)
+[----------] 1 test from GridTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GridTest.near_NonZeroAttractionForceRefinesGridNearBoundary" end time: Oct 15 16:27 CEST
+"GridTest.near_NonZeroAttractionForceRefinesGridNearBoundary" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/10 Testing: GridTest.far_NonZeroAttractionForceRefinesGridNearBoundary
+10/10 Test: GridTest.far_NonZeroAttractionForceRefinesGridNearBoundary
+Command: "/home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests/run_tests" "--gtest_filter=GridTest.far_NonZeroAttractionForceRefinesGridNearBoundary" "--gtest_also_run_disabled_tests"
+Directory: /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/tests
+"GridTest.far_NonZeroAttractionForceRefinesGridNearBoundary" start time: Oct 15 16:27 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/skowronek/projects/FEM/MES_solver/MES1D_new/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GridTest.far_NonZeroAttractionForceRefinesGridNearBoundary
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GridTest
+[ RUN      ] GridTest.far_NonZeroAttractionForceRefinesGridNearBoundary
+============================================================
+
+
+ 			GRID SECTION 
+
+
+		#### GRID PARAMETERS ####
+
+	x_start = 0
+	x_end = 1
+	Growth Factor = 1
+	Attraction Force Constant = 1
+	Grid Integration Order = 5
+	Number of elements = 10
+
+	Output File Path = ./output
+
+		# GRID PARAMETERS END #
+
+#### BOUNDARY CONDITIONS ####
+
+	 Dirichlet Condition 
+
+		#### BUILDING GRID ####
+
+		#### GRID BUILDING END ####
+
+[       OK ] GridTest.far_NonZeroAttractionForceRefinesGridNearBoundary (0 ms)
+[----------] 1 test from GridTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GridTest.far_NonZeroAttractionForceRefinesGridNearBoundary" end time: Oct 15 16:27 CEST
+"GridTest.far_NonZeroAttractionForceRefinesGridNearBoundary" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 15 16:27 CEST

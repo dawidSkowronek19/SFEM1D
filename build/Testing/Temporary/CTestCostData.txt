@@ -1,0 +1,15 @@
+run_tests_NOT_BUILT 0 0
+GridTest.Constructor 1 0.00481972
+GridDeathTest.ConstructorFailsWhenZeroElements 13 0.000243242
+GridTest.ConstructorCreatesCorrectNumberOfElements 13 0.000208366
+GridTest.ConstructrFailsWhenX_endLessThanX_start 13 0.000289419
+GridTest.ConstructrFailsWhenX_endEqualToX_start 13 0.000325634
+GridTest.ConstructorFailsWhenWrongIntegrationOrder 13 0.000339101
+GridTest.GetNodePositionReturnsCorrectValue 12 0.000345721
+GridTest.NodesAreSctrictlyMonotonic 12 0.000197007
+GridTest.ZeroAtractionForceConstantLeadsToUniformGrid 12 0.000242714
+GridTest.simple_NonZeroAttractionForceRefinesGridNearBoundary 0 0
+GridTest.strong_NonZeroAttractionForceRefinesGridNearBoundary 0 0
+GridTest.near_NonZeroAttractionForceRefinesGridNearBoundary 3 0.000690401
+GridTest.far_NonZeroAttractionForceRefinesGridNearBoundary 3 0.000923976
+---
