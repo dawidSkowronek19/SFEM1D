@@ -45,16 +45,21 @@ void Assembler::reserve_triplets(int num_elements, int p){
     m_triplets.reserve(estimated_triplets);
 }
 
-void Assembler::apply_DirBC(const std::map<int, double>& boundary_values){
-    
+void Assembler::apply_DirBC(const std::map<int, double>& boundary_values)
+{
+    for (int col = 0; col < m_S.outerSize(); ++col)
+    {
+        for (Eigen::SparseMatrix<double>::InnerIterator it(m_S, col); it; ++it)
+        {
+            if (boundary_values.count(it.row()))
+            {
+                it.valueRef() = 0.0;
+            }
+        }
+    }
     for (const auto& [dof_idx, dirichlet_val] : boundary_values)
     {
-        for (Eigen::SparseMatrix<double>::InnerIterator it(m_S, dof_idx); it; ++it)
-        {
-            it.valueRef() = 0.0;
-        }
         m_S.coeffRef(dof_idx, dof_idx) = 1.0;
-
         m_F(dof_idx) = dirichlet_val;
     }
 
