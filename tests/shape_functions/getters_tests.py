@@ -1,18 +1,11 @@
 import pytest
 import numpy as np
-import shape_module
 import logging
 
 logger = logging.getLogger(__name__)
 
-# ==========================================
-# 1. PARAMETRYZOWANE FIXTURE
-# ==========================================
-# Pytest sam wykona ten fixture i test 3 razy: dla p = 1, 2 oraz 3
-@pytest.fixture(params=[1, 2, 3])
-def shape_function(request):
-    logger.info(f'Testing for {request.param}')
-    return shape_module.ShapeFunction(request.param)
+def test_get_p(shape_function):
+    assert shape_function.get_p() in [1, 2, 3]
 
 def test_cache_and_explicit_sh_fc_evaluation(shape_function):
     integ_points = np.linspace(-1.0, 1.0, 20)
@@ -31,3 +24,13 @@ def test_cache_and_explicit_sh_fc_evaluation(shape_function):
 
             assert cache_phi == pytest.approx(explicit_val_phi, rel=1e-9)
             assert cache_dphi == pytest.approx(explicit_val_dphi, rel=1e-9)
+
+
+
+def test_get_num_shape_functions(shape_function):
+    p = shape_function.get_p()
+    assert shape_function.get_num_shape_functions() == p+1
+
+
+
+        
