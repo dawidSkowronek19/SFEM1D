@@ -16,6 +16,7 @@ FetchContent_MakeAvailable(pybind11)
 
 add_library(MyCoreLib STATIC
     src/ShapeFunction.cpp
+    src/Quadrature.cpp
 )
 
 set_target_properties(MyCoreLib PROPERTIES POSITION_INDEPENDENT_CODE ON)
@@ -23,8 +24,9 @@ set_target_properties(MyCoreLib PROPERTIES POSITION_INDEPENDENT_CODE ON)
 target_include_directories(MyCoreLib PUBLIC ${CMAKE_SOURCE_DIR}/include)
 target_link_libraries(MyCoreLib PUBLIC Eigen3::Eigen)
 
-pybind11_add_module(shape_module tests/bindings.cpp)
+pybind11_add_module(sfem1d tests/bindings.cpp)
 
-target_link_libraries(shape_module PRIVATE MyCoreLib)
+
+target_link_libraries(sfem1d PRIVATE MyCoreLib)
 
 
